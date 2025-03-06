@@ -1,0 +1,440 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+
+  --background: #faf4f2;
+  --menu-background: #e0dad9;
+  --pink: #e14775;
+  --blue: #076678;
+  --green: #269d69;
+  --orange: #e16044;
+  --yellow: #d98d0a;
+  --menu-icons: #a59fa0;
+  --line-number: #ccb9ba;
+
+  font-family: monospace;
+}
+
+.line__number {
+  color: var(--line-number);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.green {
+  color: var(--green);
+}
+
+.purple {
+  color: #ab9df2;
+}
+
+.gray {
+  color: #727072;
+}
+
+.gray__2 {
+  color: #5b666b;
+}
+
+.tag__name__container {
+  color: #5b666b;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #dfdfdd;
+}
+
+header {
+  padding: 25px;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* gap: 6rem; */
+}
+
+header img {
+  width: 105px;
+  border-radius: 41%;
+  box-shadow: 2px 2px 2px 0px #454b9385;
+  border: solid 1px black;
+}
+
+.description {
+  text-align: start;
+  font-size: 13px;
+}
+
+#copyright {
+  font-size: 16px;
+  color: var(--menu-icons);
+}
+
+.wrapper {
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+#compute__science {
+  font-weight: 100;
+  color: var(--blue);
+  font-size: 21px;
+  margin-bottom: 27px;
+}
+
+#i__am {
+  font-size: medium;
+  font-weight: 100;
+  color: var(--blue);
+}
+
+#name {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.menu {
+  position: fixed;
+  top: 21px;
+  left: 0;
+  width: 36px;
+  height: 71%;
+  padding: 20px;
+  /* color: white; */
+  box-shadow: 1px 3px 5px 1px #454b9361;
+}
+
+.menu img {
+  border-radius: 27%;
+  width: 33px;
+}
+
+.menu ul {
+  list-style: none;
+  position: relative;
+}
+
+.menu div {
+  display: none;
+  position: absolute;
+  padding: 6px;
+  background: #dfdfdd;
+  box-shadow: 3px 1px 1px #454b93ab;
+  border-radius: 4px;
+  right: -64px;
+}
+
+.menu li:hover div {
+  display: block;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+#javascript__label {
+  top: 6px;
+  right: -93px;
+}
+
+#node__label {
+  top: 73px;
+  /* right: -60px; */
+}
+
+#sql__label {
+  top: 140px;
+  right: -44px;
+}
+
+#python__label {
+  top: 211px;
+  /* right: -64px; */
+}
+
+#html__label {
+  top: 282px;
+  right: -56px;
+}
+
+#css__label {
+  /* top: 300px; */
+  bottom: 73px;
+  right: -43px;
+}
+
+#c__label {
+  /* top: 28px; */
+  bottom: 6px;
+  right: -43px;
+}
+
+.menu ul li {
+  margin-bottom: 33px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+  margin-left: 120px;
+  margin-top: 74px;
+  margin: 101px 0 55px 120px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.container__div {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 13px 16px;
+  box-shadow: 2px 2px 2px #454b9361;
+}
+
+.container__div:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#galaxian .project__img {
+  width: 85%;
+}
+
+#galaxian__img {
+  display: flex;
+  justify-content: center;
+}
+
+#about__me {
+  display: flex;
+  justify-content: center;
+}
+
+#about__me img {
+  width: 70%;
+}
+
+.title {
+  display: flex;
+  gap: 8px;
+
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.icon {
+  width: 19px;
+  border-radius: 50%;
+}
+
+.project__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title label {
+}
+
+.title p {
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  width: 99%;
+  background: #3c3836;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-top: solid 1px black;
+  box-shadow: 1px 3px 5px 1px #93454547;
+}
+
+footer img {
+  width: 18px;
+}
+
+footer span {
+  font-size: large;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  margin-right: 70px;
+  margin-left: 21px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  display: none;
+  margin: 30px 215px;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.c__title {
+  display: flex;
+  gap: 27px;
+  font-size: 22px;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.type {
+  font-size: 19px;
+}
+
+.card img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+#gif {
+  border-radius: 0;
+  width: 334px;
+  height: 380px;
+}
+
+.gif__container {
+  display: flex;
+  justify-content: end;
+}
+
+#galaxian__card {
+  flex-direction: row;
+  margin: 30px 120px 43px 190px;
+  justify-content: space-between;
+}
+
+#galaxian__card__first {
+  display: flex;
+  width: 61%;
+  flex-direction: column;
+  gap: 33px;
+}
+
+#galaxian__card__first button {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card button {
+  margin-left: 900px;
+  margin-top: -15px;
+  border-radius: 50%;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border: solid 0.5px gray;
+  background-color: #e0dad9;
+  padding: 5px;
+  box-shadow: 2px 2px 3px 1px #454b9361;
+}
+
+.card button img {
+  width: 30px;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.footer__page {
+  font-weight: 100;
+  font-size: 11px;
+}
+
+.skill__label {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  min-width: 170px;
+  padding: 9px 17px;
+  margin-bottom: 38px;
+  font-size: 17px;
+  box-shadow: 5px 4px 4px -3px var(--blue);
+  min-height: 60px;
+}
+
+#sql__menu__icon {
+  width: 39px;
+  /* background: #3dd1b724; */
+}
+
+#skills {
+  flex-direction: row;
+}
+
+.skill__label img {
+  border-radius: 10%;
+}
+
+#skills {
+  /* display: flex; */
+  justify-content: space-between;
+  margin: 80px;
+}
+
+#skills button {
+  position: fixed;
+  bottom: 75px;
+  margin: 0;
+}
+
+#back__btn {
+  position: fixed;
+  bottom: 75px;
+  margin: 0;
+}

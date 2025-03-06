@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah's Portifolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h6 id="copyright">© copyright by Sarah Elias</h6>
+      <div class="wrapper">
+        <div class="description">
+          <h3 id="i__am">Oi, eu sou</h3>
+          <h3 id="name">Sarah Elias</h3>
+          <h3 id="compute__science">&gt; estudante de Ciência da Computação</h3>
+
+          <p>&gt; Estou terminando o bacharelado em Matemática Computacional</p>
+          <p>pela UFMG e atualmente procurando por um estágio &lt;</p>
+          <!-- <div>
+                    <span class="line__number">1</span
+                    >&nbsp;
+        
+                    <span class="tag__name__container">&lt;</span
+                    ><span class="blue">h6</span
+                    ><span class="tag__name__container">&gt;</span><span id="i__am">Hi, I am</span>
+                    <span class="tag__name__container">&lt;/</span
+                    ><span class="blue">h6</span
+                    ><span class="tag__name__container">&gt;</span>
+                </div>
+                
+                <div>
+                    <span class="line__number">2</span
+                    >&nbsp;
+        
+                    <span class="tag__name__container">&lt;</span
+                    ><span class="blue">h1</span
+                    ><span class="tag__name__container">&gt;</span><span id="name">Sarah Elias</span
+                    ><span class="tag__name__container">&lt;/</span
+                    ><span class="blue">h1</span
+                    ><span class="tag__name__container">&gt;</span>
+                </div>
+
+                <div>
+                    <span class="line__number">3</span>&nbsp;
+        
+                    <span class="tag__name__container">&lt;</span
+                    ><span class="blue">h2</span
+                    ><span class="tag__name__container">&gt;</span>a
+                    <span id="compute__science">Computer Science student</span
+                    ><span class="tag__name__container">&lt;/</span
+                    ><span class="blue">h2</span
+                    ><span class="tag__name__container">&gt;</span>
+                </div> -->
+        </div>
+        <div><img src="me2.jpeg" /></div>
+      </div>
+    </header>
+
+    <aside class="menu">
+      <ul>
+        <li>
+          <img src="javascript.png" />
+          <div id="javascript__label">JavaScript</div>
+        </li>
+        <li>
+          <img src="node.png" />
+          <div id="node__label">NodeJS</div>
+        </li>
+        <li>
+          <img id="sql__menu__icon" src="sql3.png" />
+          <div id="sql__label">SQL</div>
+        </li>
+        <li>
+          <img src="python.png" />
+          <div id="python__label">Python</div>
+        </li>
+        <li>
+          <img src="html_icon.png" />
+          <div id="html__label">HTML</div>
+        </li>
+        <li>
+          <img src="css.png" />
+          <div id="css__label">css</div>
+        </li>
+        <li>
+          <img src="c++.png" />
+          <div id="c__label">C++</div>
+        </li>
+      </ul>
+    </aside>
+
+    <div id="container">
+      <div class="container__div" onclick="openPage('descobridores');">
+        <div class="title">
+          <img class="icon" src="descobridores_icon.png" />
+          <label>Website Descobridores</label>
+        </div>
+        <img class="project__img" src="descobridores.png" />
+        <div>
+          <p class="title">Iniciação Científica</p>
+          <p>
+            Evolução do site do projeto utilizando Javascript para tornar
+            iterativo o site estático, criar jogos iterativos na plataforma,
+            conectar o site a um banco SQL e mais.
+          </p>
+        </div>
+      </div>
+      <div class="container__div" onclick="openPage('skinage');">
+        <div class="title">
+          <img class="icon" src="skinage_icon.png" />
+          <label>Light Scan Skinage</label>
+        </div>
+        <img class="project__img" src="skinage.png" />
+        <div>
+          <p class="title">Iniciação Científica</p>
+          <p>
+            Desenvolvimento e implementação de aplicação para acesso e
+            gerenciamento de banco de dados Firebase, implementado com NodeJS.
+            Automatização de tarefas realizadas pela equipe.
+          </p>
+        </div>
+      </div>
+
+      <div class="container__div" onclick="openPage('bender');">
+        <div class="title">
+          <img class="icon" src="favicon.ico" />
+          <label>Bender</label>
+        </div>
+        <img class="project__img" src="bender.png" />
+        <div>
+          <p class="title">Personal Project</p>
+          <p>
+            Aplicação web desenvolvida em Node.js, Express.js, Javascript, HTML
+            + CSS e MongoDB. Projeto Fullstack que realizei para colocar em
+            prática conhecimentos adquiridos no front-end e back-end, além de
+            aplicar conceitos de APIs RESTful.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="galaxian"
+        class="container__div"
+        onclick="openPage('galaxian__card');"
+      >
+        <div class="title">
+          <img class="icon" src="galaxian_icon.png" />
+          <label>Galaxian</label>
+        </div>
+        <div id="galaxian__img">
+          <img class="project__img" src="galaxian2.png" />
+        </div>
+        <div>
+          <p>
+            Jogo feito com C++ and SFML que simula um antigo jogo de arcade
+            chamado Galaxian.
+          </p>
+        </div>
+      </div>
+
+      <div class="container__div" onclick="openSkills()">
+        <div class="title">
+          <img class="icon" src="javascript.png" />
+          <label>Habilidades e ferramentas</label>
+        </div>
+        <img class="project__img" src="skills.png" />
+        <p>
+          Mais sobre tudo o que aprendi e pratiquei ao longo da minha trajetória
+          no mundo da Ciência da Computação, incluindo minhas habilidades
+          técnicas e interpessoais.
+        </p>
+      </div>
+
+      <div class="container__div" onclick="openPage('me__card');">
+        <div class="title">
+          <img class="icon" src="me2.jpeg" />
+          <label>Quem sou eu</label>
+        </div>
+        <div id="about__me">
+          <img class="project__img" src="me5.jpeg" />
+        </div>
+        <p>
+          Aqui, falo sobre mim, meus hobbies e como passo meu tempo fora do
+          mundo da programação. Também compartilho minha trajetória na faculdade
+          e como comecei na Ciência da Computação.
+        </p>
+      </div>
+    </div>
+
+    <div id="skinage" class="card">
+      <div class="c__title">
+        <img src="skinage_icon.png" />
+        <label class="c__title">Preemie Test - Light Scan Skinage</label>
+      </div>
+      <label class="type">Iniciação Científica</label>
+      <div>
+        <p>
+          Trabalhei no projeto Preemie Test - Light Scan Skinage onde precisei,
+          inicialmente, me comunicar e aprender com uma equipe de médicos e
+          outros profissionais da saúde. Meu papel foi compreender suas demandas
+          e traduzi-las em um programa de gerenciamento e análise de dados, que
+          gerava novas informações a partir dos dados coletados durante a
+          pesquisa de campo.
+        </p>
+        <br />
+        <p>
+          O banco de dados utilizado foi o Firebase Realtime Database, um banco
+          NoSQL. Desenvolvi uma aplicação para conectar com esse banco
+          utilizando NodeJS, que fazia tratamento dos dados e automatizava
+          cálculos, produzindo novos dados para a equipe. A maior parte do
+          trabalho foi no back-end, mas também atuei no Front-end para
+          implementar uma simples interface utilizando Javascript e HTML.
+        </p>
+      </div>
+
+      <span
+        >Ferramentas usadas:
+        <span class="blue"
+          >JavaScript | NodeJS | banco NoSQL (firebase realtime database)</span
+        ></span
+      >
+      <span class="link"
+        >Link do projeto:
+        <a
+          class="blue"
+          href="https://skinage.medicina.ufmg.br"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          skinage.medicina.ufmg.br
+        </a></span
+      >
+
+      <button onclick="openContainer();">
+        <img src="arrow.png" />
+      </button>
+    </div>
+
+    <div id="descobridores" class="card">
+      <div class="c__title">
+        <img src="descobridores_icon.png" />
+        <label class="c__title">Website Descobridores da Matemática</label>
+      </div>
+      <label class="type">Iniciação Científica</label>
+      <div>
+        <p>
+          No projeto Descobridores da Matemática, trabalhei como desenvolvedora
+          Fullstack, sendo responsável pelo desenvolvimento e aprimoramento de
+          um site interativo. Implementei funcionalidades como um sistema de
+          chat, conexão com um banco de dados SQL e automatização de tarefas.
+        </p>
+        <br />
+        <p>
+          Inicialmente, meu foco foi atender à principal demanda da equipe:
+          adicionar interatividade a um site estático. Para isso, utilizei
+          JavaScript, HTML e CSS. Com o avanço do projeto e novas ideias
+          surgindo, desenvolvi um chat para o website, o que exigiu a criação de
+          um banco de dados SQL, inicialmente no mySQL e posteriormente adaptado
+          para o PostgreSQL, e a estruturação do servidor, implementado
+          inicialmente em Node.js. Além disso, implementei um sistema
+          simplificado para que a equipe pudesse adicionar novos conteúdos ao
+          site com mais facilidade. Esse trabalho foi supervisionado por um
+          servidor do Instituto de Ciências Exatas da UFMG, pois o site seria
+          hospedado no portal oficial da instituição.
+        </p>
+
+        <br />
+        <p>
+          Durante todo o projeto também atuei como monitora em outras áreas que
+          permitiram um contato com uma equipe diversa. Em um ambiente de
+          trabalho diferente do meu habitual, pude desenvolver novas habilidades
+          organizacionais e de gestão, como comunicação, capacidade de mediação,
+          liderança e gestão de grupo e habilidades interpessoais e emocionais
+          como empatia e paciência, escuta ativa, flexibilidade e criatividade.
+        </p>
+      </div>
+
+      <span
+        >Ferramentas usadas:
+        <span class="blue"
+          >JavaScript | HTML | CSS | SQL (mySQL) | NodeJS
+        </span></span
+      >
+      <span class="link"
+        >Link do projeto:
+        <a
+          class="blue"
+          href="https://www.icex.ufmg.br/descobridores/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          www.icex.ufmg.br/descobridores
+        </a></span
+      >
+
+      <button onclick="openContainer();">
+        <img src="arrow.png" />
+      </button>
+    </div>
+    <div id="bender" class="card">
+      <div class="c__title">
+        <img src="logo.png" />
+        <label class="c__title">Website Bender.com</label>
+      </div>
+      <label class="type">Projeto Independente</label>
+      <div>
+        <p>
+          Aplicação web desenvolvida em Node.js, Express.js, Javascript, HTML +
+          CSS e MongoDB. Um projeto Fullstack que realizei para colocar em
+          prática os conhecimentos adquiridos tanto no front-end quanto no
+          back-end, além de praticar conceitos de APIs RESTful e criação de
+          servidores. Utilizei Javascript, HTML e CSS para a interface do
+          website e para o servidor utilizei NodeJs e Express. O banco de dados
+          escolhido foi o MongoDB, um banco No SQL.
+        </p>
+        <br />
+        <p>
+          Nesse website foi implementada toda a estrutura para um site de aulas
+          particulares. Ele permite a criação de contas por usuários, compra de
+          aulas, armazenamento de perfis de professores com suas respectivas
+          informações, apresentação e busca de aulas e mais. A ideia desse
+          website e o seu estilo foi inspirada na animação
+          <span class="blue">Avatar, a lenda de Aang</span>.
+        </p>
+      </div>
+
+      <span
+        >Ferramentas usadas:
+        <span class="blue">
+          NodeJS | Express | JavaScript | MongoDB | HTML | CSS | PUG |
+          Postman</span
+        ></span
+      >
+      <span class="link"
+        >Link do projeto
+        <span class="footer__page"
+          >(pode demorar de 1 a 2 minutos para abrir)</span
+        >:
+        <a
+          class="blue"
+          href="https://bender.onrender.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          bender.onrender.com
+        </a></span
+      >
+      <span class="link"
+        >Link para o repositório do código no github:
+        <a
+          class="blue"
+          href="https://github.com/Anak9/bender"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/Anak9/bender
+        </a></span
+      >
+
+      <button onclick="openContainer();">
+        <img src="arrow.png" />
+      </button>
+    </div>
+    <div id="galaxian__card" class="card">
+      <div id="galaxian__card__first">
+        <div class="c__title">
+          <img src="galaxian_icon.png" />
+          <label class="c__title">Jogo Galaxian</label>
+        </div>
+
+        <label class="type">Projeto Independente</label>
+        <div>
+          <p>
+            Criei este jogo para funcionar exatamente como um antigo jogo de
+            arcade que meu professor de computação gráfica jogava quando era
+            criança. É um dos meus projetos favoritos da faculdade.
+          </p>
+          <br />
+          <p>Usei C++ e SFML, uma bliblioteca 2D.</p>
+        </div>
+
+        <span
+          >Ferramentas usadas:
+          <span class="blue"> C++ | POO | SFML </span>
+        </span>
+        <span class="link"
+          >Vídeo do jogo no youtube:
+          <a
+            class="blue"
+            href="https://youtu.be/AXJBcVwwK-U"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://youtu.be/AXJBcVwwK-U
+          </a></span
+        >
+
+        <span class="link"
+          >Link para o repositório do código no github:
+          <a
+            class="blue"
+            href="https://github.com/Anak9/sfml_game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/Anak9/sfml_game
+          </a></span
+        >
+
+        <button onclick="openContainer();">
+          <img src="arrow.png" />
+        </button>
+      </div>
+      <div class="gif__container">
+        <img id="gif" src="galaxian-gif.gif" />
+      </div>
+    </div>
+    <div id="skills" class="card">
+      <!-- <img src="skills.png" /> -->
+      <!-- <label class="c__title">Habilidades e ferramentas</label> -->
+      <!-- <label class="type">Iniciação Científica</label> -->
+
+      <div>
+        <label class="skill__label">
+          <img src="node.png" />
+          NodeJS</label
+        >
+        <label class="skill__label">
+          <img src="express.png" />
+          Express.js</label
+        >
+        <label class="skill__label">
+          <img src="mongodb.png" />
+          MongoDB</label
+        >
+      </div>
+
+      <div>
+        <label class="skill__label">
+          <img src="javascript.png" />
+          JavaScript</label
+        >
+        <label class="skill__label">
+          <img src="html_icon.png" />
+          HTML</label
+        >
+        <label class="skill__label">
+          <img src="css.png" />
+          CSS</label
+        >
+      </div>
+
+      <div>
+        <label class="skill__label">
+          <img src="rest.png" />
+          RESTful API</label
+        >
+        <label class="skill__label">
+          <img src="sql2.png" />
+          SQL</label
+        >
+        <label class="skill__label">
+          <img src="mysql.png" />
+          MySQL</label
+        >
+      </div>
+
+      <div>
+        <label class="skill__label">
+          <img src="python.png" />
+          Python</label
+        >
+        <label class="skill__label">
+          <img src="c++.png" />
+          C++</label
+        >
+        <label class="skill__label">
+          <img src="c.png" />
+          C</label
+        >
+      </div>
+
+      <button onclick="openContainerAndMenu();">
+        <img src="arrow.png" />
+      </button>
+    </div>
+
+    <div id="me__card" class="card">
+      <div class="c__title">
+        <img src="me2.jpeg" />
+        <label class="c__title">Quem sou eu</label>
+      </div>
+
+      <p>
+        Sou uma estudante de Matemática Computacional pela UFMG, com forte
+        experiência em desenvolvimento de aplicações web. Desde cedo, me
+        interessei por tecnologia, o que me levou a aprender C++ e JavaScript,
+        desenvolvendo uma sólida base em estruturas de dados e algoritmos. Essa
+        base foi essencial para aprimorar minhas habilidades de resolução de
+        problemas e otimização de código. Minha trajetória inclui projetos
+        acadêmicos relevantes onde atuei no front-end e no back-end e aprendi a
+        trabalhar com dados e banco de dados NoSQL e SQL. Possuo experiência com
+        Node.js e desenvolvimento full-stack, sendo que meu projeto mais
+        recente, chamado Bender, foi implementado com Node.js, Express.js e
+        MongoDB ( https://bender.onrender.com - pode demorar uns minutos devido
+        ao tipo de hospedagem!). Sou proativa, disposta a aprender e estou
+        sempre buscando aprimorar minhas habilidades técnicas. Tenho certeza que
+        posso agregar valor à empresa atuando em projetos que demandem alta
+        capacidade de programação, otimização de processos e criação de soluções
+        eficazes. Estou animada para aplicar minha experiência prática, aprender
+        com novos desafios e contribuir com soluções inovadoras para a empresa.
+        Programação é minha paixão, e estou empolgada em trazer essa energia
+        para a empresa!
+      </p>
+
+      <button id="back__btn" onclick="openContainer();">
+        <img src="arrow.png" />
+      </button>
+    </div>
+
+    <footer>
+      <span>Find me in:</span>
+      <a
+        href="https://www.linkedin.com/in/sarah-elias-677b6b206/"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span><img src="linkedin.png" />linkedin</span></a
+      >
+      <a
+        href="https://github.com/Anak9"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><span><img src="github.png" />github</span></a
+      >
+
+      <span><img src="whatsapp.png" /> (31) 98466-9701</span>
+      <span><img src="email.png" /> sarahelias308@gmail.com</span>
+    </footer>
+
+    <script>
+      const menuEl = document.querySelector(".menu");
+      const containerEl = document.getElementById("container");
+      const header = document.querySelector("header");
+      let activePage = containerEl;
+
+      const openContainer = () => {
+        containerEl.style.display = "flex";
+        header.style.display = "block";
+        activePage.style.display = "none";
+        activePage = containerEl;
+      };
+
+      const openContainerAndMenu = () => {
+        openContainer();
+        menuEl.style.display = "block";
+      };
+
+      const openPage = (page) => {
+        activePage.style.display = "none";
+
+        activePage = document.getElementById(page);
+        activePage.style.display = "flex";
+
+        header.style.display = "none";
+      };
+
+      const openSkills = () => {
+        openPage("skills");
+        menuEl.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
